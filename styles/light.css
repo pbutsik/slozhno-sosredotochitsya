@@ -10,9 +10,14 @@
   --accent-color: #FF8DCB;
   --accent-text-color: #353430;
   --main-title-color: #353430;
+  --background-image: url("../images/cover-image-light.png");
 }
 
 @media (prefers-color-scheme: light) {
+  .header span {
+    display: none;
+  }  
+  
   :root {
     --common-font: 'IBM Plex mono', sans-serif;
     --background-color: #FFF1F7;
@@ -25,9 +30,6 @@
     --accent-color: #FF8DCB;
     --accent-text-color: #353430;
     --main-title-color: #353430;
-  }
-
-  .header span {
-    display: none;
+    --background-image: url("../images/cover-image-light.png");
   }
 }
