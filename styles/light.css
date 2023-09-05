@@ -11,3 +11,23 @@
   --accent-text-color: #353430;
   --main-title-color: #353430;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --common-font: 'IBM Plex mono', sans-serif;
+    --background-color: #FFF1F7;
+    --common-text-color: #353430;
+    --title-color: #FFC2E6;
+    --title-shadow-color: #FF8DCB;
+    --accent-frame-color: #353430;
+    --nav-bar-color: #353430;
+    --button-hover-color: #32312D66;
+    --accent-color: #FF8DCB;
+    --accent-text-color: #353430;
+    --main-title-color: #353430;
+  }
+
+  .header span {
+    display: none;
+  }
+}
