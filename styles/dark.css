@@ -11,3 +11,7 @@
   --accent-text-color: #000028;
   --main-title-color: #000028;
 }
+
+.page:is(.theme_dark) > .header span {
+  display: block;
+}
