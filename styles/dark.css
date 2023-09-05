@@ -10,7 +10,7 @@
   --accent-color: #FF0070;
   --accent-text-color: #000028;
   --main-title-color: #000028;
-  --background-image: url("../images/cover-image-dark.png");
+  background-image: url(../images/cover-image-dark.png);
 }
 
 .page:is(.theme_dark) > .header span {
