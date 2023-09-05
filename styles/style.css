@@ -11,10 +11,7 @@
   background-attachment: fixed;
 }
 
-.title-decor {
-  background-color: var(--accent-color);
-  color: var(--accent-text-color);
-}
+
 
 .grid {
   display: grid;
@@ -197,6 +194,11 @@
 
 .text-shadow:focus-visible {
   outline: 1px solid var(--common-text-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 
 .main__grid {
