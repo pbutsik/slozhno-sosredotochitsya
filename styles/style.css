@@ -1,5 +1,245 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+/* global */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 1440px;
+  color: var(--common-text-color, #f1b2ce);
+  font-family: var(--common-font, "IBM Plex mono", sans-serif);
+  background-image: url("../images/cover-image-dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+}
+
+.theme_dark {
+  background-image: url("../images/cover-image-dark.png");
+}
+
+.theme_light {
+  background-image: url("../images/cover-image-light.png");
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* global */
+
+/* header */
+.header {
+  position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
+  margin-block-end: 40px;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  justify-items: end;
+}
+
+.header__title {
+  justify-self: start;
+  color: var(--title-color, #DB00FF);
+  text-shadow: 4px 4px 0px var(--title-shadow-color, #FF0070);
+  font-family: var(--common-font, 'IBM Plex mono', sans-serif);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__article {
+  margin-block-start: auto;
+  margin-block-end: calc(66px - 10px);
+  font-family: var(--common-font, 'IBM Plex mono', sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  border-block-start: 1px solid var(--accent-frame-color);
+  border-inline-end: 1px solid var(--accent-frame-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+  border-block-end: 1px solid var(--accent-frame-color);
+  border-inline-start: 1px solid var(--accent-frame-color);
+}
+
+.header__theme-menu {
+  color: var(--nav-bar-color);
+  margin-block-start: 65px;
+  margin-block-end: auto;
+}
+
+.header__theme-menu-list {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  text-align: center;
+  height: 26px;
+  padding: 0 13px;
+  border: none;
+  background-color: initial;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(-nav-bar-color) ;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--nav-bar-color);
+  pointer-events: none;
+}
+
+.header span {
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  color: var(--title-shadow-color);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header span::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-inline-start: 9px;
+  margin-inline-end: 8px;
+  background-color: var(--title-shadow-color);
+  border-radius: 50%;
+}
+
+.page:is(.theme_light) > .header span {
+  display: none;
+}
+/* header */
+
+/* main */
+.main {
+  flex-direction: column;
+  gap: 50px;
+  margin: 0;
+  padding-inline: 10px;
+  margin-block-end: 40px;
+}
+
+.main__block {
+  gap: 20px;
+  grid-template-rows: repeat(auto-fit ,minmax(min-content, max-content));
+}
+
+.main__title,
+.main__sub-title {
+  color: var(--main-title-color);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.main__card {
+  line-height: 23.4px;
+}
+
+.main__card__title {
+  margin-block-end: 10px;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.main_card__description {
+  font-weight: 400;
+}
+
+.text-shadow  {
+  text-decoration: none;
+  text-shadow: 2px 1px 0px var(--title-shadow-color);
+}
+
+.text-shadow:focus-visible {
+  outline: 1px solid var(--common-text-color);
+}
+
+.text-shadow:hover {
+  text-decoration: underline;
+}
+
+.main__card-sub-title {
+  margin-block-end: 10px;
+  font-weight: 400;
+}
+
+.main__grid {
+  grid-template-rows: repeat(auto-fit ,minmax(min-content, max-content));
+  gap: 10px;
+}
+
+.main__grid-items {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+}
+/* main */
+
+/* footer */
+.footer {
+  position: relative;
+  margin: 0;
+  block-size: 100vh;
+  padding-inline: 10px;
+  min-block-size: 668px;
+}
+
+.footer__title {
+  margin: auto;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+/* footer */

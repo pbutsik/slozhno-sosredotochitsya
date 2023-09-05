@@ -10,6 +10,9 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  padding: 0;
+  inline-size: 100%;
+  font-size: 18px;
 }
 
 h1,
@@ -23,14 +26,7 @@ p {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
-}
-
-picture {
-  margin: 0;
-  padding: 0;
 }
 
 button,
@@ -39,4 +35,13 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+ul,
+a,
+span,
+img,
+picture {
+  margin: 0;
+  padding: 0;
 }
