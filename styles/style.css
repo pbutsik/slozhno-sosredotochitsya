@@ -294,7 +294,7 @@
     inline-size: 236px;
   }
 
-  .main__grid{
+  .main__grid {
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     gap: 20px;
@@ -363,7 +363,7 @@
     inline-size: 315px;
   }
 
-  .column-block-3 .main__card{
+  .column-block-3 .main__card {
     grid-row-start: 2;
   }
 }
