@@ -1,12 +1,13 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --common-font: 'IBM Plex mono', sans-serif;
+  --background-color: #000028;
+  --common-text-color: #F1B2CE;
+  --title-color: #DB00FF;
+  --title-shadow-color: #FF0070;
+  --accent-frame-color: #FF0070;
+  --nav-bar-color: #FF0070;
+  --button-hover-color: #FF007066;
+  --accent-color: #FF0070;
+  --accent-text-color: #000028;
+  --main-title-color: #FF0070;
 }

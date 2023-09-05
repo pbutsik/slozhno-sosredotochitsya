@@ -3,6 +3,7 @@
   max-width: 1440px;
   color: var(--common-text-color, #f1b2ce);
   font-family: var(--common-font, "IBM Plex mono", sans-serif);
+  background-color: var(--background-color);
   background-image: url("../images/cover-image-dark.png");
   background-repeat: no-repeat;
   background-position: center;
