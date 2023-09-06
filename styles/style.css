@@ -84,7 +84,7 @@
 .header__theme-menu {
   color: var(--nav-bar-color);
   align-items: center;
-  /* margin-block-start: 65px; */
+  margin-block-start: 20%;
   margin-block-end: auto;
 }
 
