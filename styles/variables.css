@@ -1,5 +1,5 @@
 :root {
-  --common-font: 'IBM Plex mono', sans-serif;
+  --common-font: 'IBM Plex mono', 'monospace', sans-serif;
   --background-color: #000028;
   --common-text-color: #F1B2CE;
   --title-color: #DB00FF;
