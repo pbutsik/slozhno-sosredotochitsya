@@ -30,7 +30,7 @@
   margin-block-end: 40px;
   padding: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr min-content 1fr;
   justify-content: space-between;
   align-items: center;
   justify-items: end;
@@ -155,7 +155,6 @@
 
 .main__block {
   gap: 20px;
-  /* grid-template-rows: repeat(auto-fit, minmax(min-content, max-content)); */
 }
 
 .main__title,
@@ -208,7 +207,6 @@
 }
 
 .main__grid {
-  /* grid-template-rows: repeat(auto-fit, minmax(min-content, max-content)); */
   gap: 10px;
 }
 
