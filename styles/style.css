@@ -267,7 +267,7 @@
 
   .header__article {
     /* max-width: 364px; */
-    max-width: 43%;
+    max-width: 50%;
     /* margin-block-end: calc(183px - 20px); */
     margin-block-end: 5%;
   }
