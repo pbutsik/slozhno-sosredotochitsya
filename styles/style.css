@@ -50,7 +50,7 @@
 .header__article {
   /* margin-block-start: auto; */
   /* margin-block-end: calc(66px - 10px); */
-  margin-block-start: 5%;
+  margin-block-start: 8%;
   font-family: var(--common-font, "IBM Plex mono", sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -266,7 +266,8 @@
   }
 
   .header__article {
-    max-width: 364px;
+    /* max-width: 364px; */
+    max-width: 43%;
     /* margin-block-end: calc(183px - 20px); */
     margin-block-end: 5%;
   }
