@@ -194,7 +194,7 @@
   text-shadow: 2px 1px 0px var(--title-shadow-color);
 }
 
-.link:focus-visible {
+.link:focus {
   outline: none;
 }
 
@@ -318,23 +318,23 @@
     grid-column: span 3;
   }
 
-  .item-1 {
+  .items:nth-child(2) {
     grid-column: span 2;
   }
 
-  .item-2 {
+  .items:nth-child(3) {
     grid-row: span 2;
   }
 
-  .item-3 {
+  .items:nth-child(4) {
     grid-row: span 2;
   }
 
-  .item-4 {
+  .items:nth-child(5) {
     grid-row: span 1;
   }
 
-  .item-5 {
+  .items:nth-child(6) {
     grid-column: span 2;
   }
 
