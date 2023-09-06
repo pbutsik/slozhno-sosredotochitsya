@@ -48,8 +48,10 @@
 }
 
 .header__article {
-  margin-block-start: auto;
-  margin-block-end: calc(66px - 10px);
+  align-items: center;
+  margin-block-start: 12%;
+  /* margin-block-start: auto;
+  margin-block-end: calc(66px - 10px); */
   font-family: var(--common-font, "IBM Plex mono", sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -81,7 +83,8 @@
 
 .header__theme-menu {
   color: var(--nav-bar-color);
-  margin-block-start: 65px;
+  align-items: center;
+  /* margin-block-start: 65px; */
   margin-block-end: auto;
 }
 
