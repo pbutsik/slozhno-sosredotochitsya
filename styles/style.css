@@ -2,15 +2,13 @@
 .page {
   max-width: 1440px;
   color: var(--common-text-color, #f1b2ce);
-  font-family: var(--common-font, 'IBM Plex mono', 'monospace', sans-serif);
+  font-family: var(--common-font, "IBM Plex mono", monospace, sans-serif);
   background-color: var(--background-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-
-
 
 .grid {
   display: grid;
@@ -83,8 +81,8 @@
 .header__theme-menu {
   color: var(--nav-bar-color);
   /* margin-block-start: 65px; */
-  margin-block-start: 18%;
-  margin-block-end: auto;
+  /* margin-block-start: 18%;
+  margin-block-end: auto; */
 }
 
 .header__theme-menu-list {
@@ -142,7 +140,6 @@
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--title-shadow-color);
 }
-
 
 /* header */
 
