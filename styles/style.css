@@ -266,7 +266,7 @@
     /* max-width: 364px; */
     max-width: 50%;
     /* margin-block-end: calc(183px - 20px); */
-    margin-block-end: 5%;
+    /* margin-block-end: 5%; */
   }
 
   .decorated-zone::before {
@@ -363,7 +363,7 @@
   .header__article {
     min-width: 491px;
     /* margin-block-end: calc(134px - 20px); */
-    margin-block-end: 5.5%;
+    /* margin-block-end: 5.5%; */
   }
 
   .focus-description,
