@@ -12,8 +12,13 @@
   background-image: url(../images/cover-image-light.png);
 }
 
+.page:is(.theme_light) > .header span {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
-  .header span {
+  .page.theme_light .accent,
+  .page.theme_auto .accent {
     display: none;
   }
 

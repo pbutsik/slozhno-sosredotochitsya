@@ -17,7 +17,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
+  .page.theme_light .accent,
+  .page.theme_auto .accent {
+    display: block;
+  }
   .page {
     background-image: url(../images/cover-image-dark.png);
   }
