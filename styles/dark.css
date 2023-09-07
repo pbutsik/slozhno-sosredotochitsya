@@ -15,3 +15,24 @@
 .page:is(.theme_dark) > .header span {
   display: block;
 }
+
+@media (prefers-color-scheme: dark) {
+
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
+
+  :root {
+    --background-color: #000028;
+    --common-text-color: #F1B2CE;
+    --title-color: #DB00FF;
+    --title-shadow-color: #FF0070;
+    --accent-frame-color: #FF0070;
+    --nav-bar-color: #FF0070;
+    --button-hover-color: #FF007066;
+    --accent-color: #FF0070;
+    --accent-text-color: #000028;
+    --main-title-color: #FF0070;
+    --background-image: url("../images/cover-image-dark.png");
+  }
+}
