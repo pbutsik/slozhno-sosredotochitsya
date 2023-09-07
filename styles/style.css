@@ -359,9 +359,12 @@
 
   .focus-causes .main__title {
     inline-size: 315px;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
-  .focus-causes .main__card {
+  /* .focus-causes .main__card {
     grid-row-start: 2;
-  }
+    grid-row-end: 3;
+  } */
 }
