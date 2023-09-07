@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.main_card__description + p {
+  margin-top: 20px;
+}
+
 /* global */
 
 /* header */
@@ -362,9 +366,4 @@
     grid-column-start: 1;
     grid-column-end: 4;
   }
-
-  /* .focus-causes .main__card {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  } */
 }
